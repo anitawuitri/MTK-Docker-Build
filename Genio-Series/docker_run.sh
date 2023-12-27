@@ -1,5 +1,5 @@
 #!/bin/bash
-container_name=$USER-i1200
+container_name=$USER-genio
 usrid=`id -u`
 grpid=`id -g`
 
@@ -8,7 +8,7 @@ echo "create $container_name container"
 if [ `docker ps | grep -c $container_name` != 1 ]; then
     docker run -idt --name $container_name --rm \
         -v /home/$USER/.ssh:/home/dev/.ssh \
-        -v $PWD:/home/dev/iot-yocto i1200:dev 
+        -v $PWD:/home/dev/iot-yocto genio:dev 
 else
     echo "container $container_name existed"
 fi 
