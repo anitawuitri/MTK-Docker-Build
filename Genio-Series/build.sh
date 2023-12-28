@@ -29,5 +29,7 @@ done
 if [ $model == "700" ]; then MACHINE=genio-700-evk; fi
 if [ $model == "1200" ]; then MACHINE=genio-1200-evk; fi
 
-#$DISTRO $MACHINE bitbake rity-demo-image
+
+# $DISTRO $MACHINE bitbake rity-demo-image
+# MACHINE=genio-1200-evk bitbake rity-demo-image
 $MACHINE bitbake rity-demo-image

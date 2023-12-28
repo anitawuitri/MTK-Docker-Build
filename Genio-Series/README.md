@@ -153,7 +153,7 @@ CONTAINER ID   IMAGE       COMMAND       CREATED          STATUS          PORTS 
 $ docker exec -it anitawu-genio bash
 dev@06461f40213e:~$ 
 ```
-### 4. start to build sb52 in container
+### 4. start to build genio i1200 or i700 EVK in container
 ```bash
 ### 3. cd to iot-yocto folder
 dev@7837edb4ee77:~$ cd iot-yocto/
